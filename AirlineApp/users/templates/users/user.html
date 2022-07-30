@@ -1,0 +1,7 @@
+{% extends "flight/layout.html" %}
+
+{% block body %}
+	<h1> welcome, {{request.user.first_name}} </h1>
+
+	<a href = "{% url "logout"%}"> logout</a>
+{% endblock%}
