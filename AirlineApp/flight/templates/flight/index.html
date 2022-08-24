@@ -1,6 +1,7 @@
 {% extends "flight/layout.html" %}
 
 {%block body%}
+<h1> welcome, {{request.user.username}} </h1>
 	<h1> Flights!</h1>
 	<ul>
 		{%for flight in flights%}
@@ -9,5 +10,7 @@
 		</a>
 		{% endfor %}
 	</ul>
+	<br>
+	<a href = "{% url "logout"%}"> logout</a>
 
 {% endblock %}
