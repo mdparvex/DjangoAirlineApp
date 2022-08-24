@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AirlineApp",
+    "\\AirlineApp\\AirlineApp",
+    "\\AirlineApp\\flight",
+    "\\AirlineApp\\flight\\templates",
+    "\\AirlineApp\\flight\\templates\\flight",
+    "\\AirlineApp\\users",
+    "\\AirlineApp\\users\\templates",
+    "\\AirlineApp\\users\\templates\\users"
+  ],
+  "SelectedNode": "\\AirlineApp\\flight\\views.py",
+  "PreviewInSolutionExplorer": false
+}

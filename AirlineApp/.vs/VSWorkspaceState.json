@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\AirlineApp",
-    "\\flight",
     "\\flight\\templates",
-    "\\flight\\templates\\flight"
+    "\\flight\\templates\\flight",
+    "\\users",
+    "\\users\\templates",
+    "\\users\\templates\\users"
   ],
-  "SelectedNode": "\\flight\\templates\\flight\\index.html",
+  "SelectedNode": "\\users\\templates\\users\\user.html",
   "PreviewInSolutionExplorer": false
 }

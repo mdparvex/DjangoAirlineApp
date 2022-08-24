@@ -15,7 +15,7 @@ def flight(request, flight_id):
 	flight = Flight.objects.get(pk=flight_id)
 	context = {
 		"flight": flight,
-		"passengers": flight.passengers.all(),
+		"passengers": Passenger.objects.filter(flights=flight),
 		"non_passengers": Passenger.objects.exclude(flights=flight).all()
 	}
 	return render(request, "flight/flight.html", context)
@@ -25,4 +25,5 @@ def book(request, flight_id):
 		flight = Flight.objects.get(pk=flight_id)
 		passenger = Passenger.objects.get(pk = int(request.POST["passenger"]))
 		passenger.flights.add(flight)
+		
 		return HttpResponseRedirect(reverse("flight", args=(flight.id,)))
